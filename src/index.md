@@ -1,4 +1,4 @@
-# UF01. Fonaments de Programació
+# UF06. Funcions
 
 ::: tip Informació del curs
 **Professors:** Guillermo Garrido Portes / David Tur Sanmateu
@@ -11,9 +11,8 @@
 
 :::
 
-
-::: info Benvinguts al Curs
-Aquest curs està dissenyat per introduir-vos als fonaments essencials de la programació. Aprendreu els conceptes bàsics, les metodologies i les eines necessàries per començar la vostra trajectòria en el món del desenvolupament de programari.
+::: info Síntesi de la unitat
+Aquesta unitat està dedicada a l’estudi de les funcions, un element fonamental per estructurar i reutilitzar el codi. Aprendreu com es declaren i es criden les funcions, com funcionen els paràmetres i el valor de retorn, i quin és l’àmbit de les variables dins d’una funció. També s’introduirà el concepte de recursivitat, una tècnica en què una funció es crida a si mateixa per resoldre problemes de forma elegant i estructurada.
 :::
 
 ## Continguts del Curs {.animate-title}
