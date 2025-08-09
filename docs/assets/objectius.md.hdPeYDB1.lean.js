@@ -1,1 +1,0 @@
-import{_ as i,c as a,o as r,a4 as s}from"./chunks/framework.hPoXimdX.js";const m=JSON.parse('{"title":"Objectius","description":"","frontmatter":{},"headers":[],"relativePath":"objectius.md","filePath":"objectius.md"}'),t={name:"objectius.md"};function l(o,e,c,n,d,u){return r(),a("div",null,e[0]||(e[0]=[s("",2)]))}const b=i(t,[["render",l]]);export{m as __pageData,b as default};
