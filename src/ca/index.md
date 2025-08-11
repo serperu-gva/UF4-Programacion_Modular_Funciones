@@ -21,23 +21,20 @@ Aquesta unitat està dedicada a l’estudi de les funcions, un element fonamenta
 
 Aquest tema aborda els conceptes pràctics i sintàctics d'un llenguatge de programació específic, que són la base per a escriure codi funcional.
 
-- Objectiu 3.5: Identificar els diferents tipus de dades i saber quan utilitzar-los.
-- Objectiu 3.6: Declarar i utilitzar variables i literals per a emmagatzemar dades.
-- Objectiu 3.7: Emprar operadors aritmètics, lògics i de comparació en expressions.
-- Objectiu 3.8: Implementar l'entrada i eixida de dades a través de la consola.
-- Objectiu 3.9: Escriure codi amb estructures de control alternatives (condicionals).
+- Objectiu 6.1: Entendre el concepte de funció i la seva utilitat per a l'organització i la reutilització del codi.
+- Objectiu 6.2: Declarar i cridar funcions, i comprendre la diferència entre les dues accions.
+- Objectiu 6.3: Comprendre l'**àmbit de les variables** (scope) i les seves implicacions en el flux del programa.
+- Objectiu 6.4: Utilitzar **paràmetres** per passar dades a les funcions i entendre la distinció entre el pas per **valor** i el pas per **referència**.
+- Objectiu 6.5: Dissenyar funcions que retornin un valor per poder utilitzar el resultat en altres parts del codi.
+- Objectiu 6.6: Introduir el concepte de **recursivitat** per resoldre problemes de manera elegant i eficient.
 
 ---
 
 | Criteri d'Avaluació | Objectius Didàctics |
 | :--- | :--- |
-| **RA1-a**. S'han identificat els blocs que componen l'estructura d'un programa informàtic. | **Objectiu 3.2** |
-| **RA1-d**. S'han identificat els diferents tipus de variables i la utilitat específica de cadascun. | **Objectiu 3.5, Objectiu 3.6** |
-| **RA1-e**. S'ha modificat el codi d'un programa per a crear i utilitzar variables. | **Objectiu 3.6** |
-| **RA1-f**. S'han creat i utilitzat constants i literals. | **Objectiu 3.6** |
-| **RA1-g**. S'han classificat, reconegut i utilitzat en expressions els operadors del llenguatge. | **Objectiu 3.7** |
-| **RA1-h**. S'ha comprovat el funcionament de les conversions de tipus explícites i implícites. | **Objectiu 3.6** |
-| **RA1-i**. S'han introduït comentaris en el codi. | **Objectiu 3.5** |
+| **RA02.d**: S'han utilitzat mètodes i propietats dels objectes. | **Objectiu 6.2, Objectiu 6.4** |
+| **RA02.f**: S'han utilitzat paràmetres en la crida a mètodes. | **Objectiu 6.4** |
+| **RA04.c**: S'han definit propietats i mètodes. | **Objectiu 6.2, Objectiu 6.5** |
 
 :::
 
