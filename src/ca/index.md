@@ -19,7 +19,7 @@ Aquesta unitat està dedicada a l’estudi de les funcions, un element fonamenta
 
 ::: tip Objectius cuberts i relació amb RA
 
-Aquest tema aborda els conceptes pràctics i sintàctics d'un llenguatge de programació específic, que són la base per a escriure codi funcional.
+Aquesta unitat didàctica té com a objectiu principal que l'alumnat aprengui a modular el codi mitjançant l'ús de funcions i mètodes.
 
 - Objectiu 6.1: Entendre el concepte de funció i la seva utilitat per a l'organització i la reutilització del codi.
 - Objectiu 6.2: Declarar i cridar funcions, i comprendre la diferència entre les dues accions.
