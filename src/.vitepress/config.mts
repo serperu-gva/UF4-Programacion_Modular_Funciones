@@ -51,15 +51,15 @@ export default ({
           nav: [
             { text: '🏠 Inici', link: '/ca/index' },
             { text: '📚 Continguts', items: [
-              { text: '1. Introducció', link: '/1-introduccio' },
-              { text: "2. Declaració d'una funció", link: '/2-declaracio' },
-              { text: '3. Cridar una funció', link: '/3-crida' },
-              { text: "4. Àmbit de les variables", link: '/4-ambit' },
-              { text: "5. Paràmetres: pas per valor i per referència", link: '/5-parametres' },
-              { text: "6. Devolució d'un valor", link: "/6-devolucio" },
-              { text: '7. Recursivitat', link: '/7-recursivitat' },
-              { text: '💡Exemples', link: '/8-exemples' },
-              { text: '✏️Exercicis', link: '/9-exercicis' },
+              { text: '1. Introducció', link: '/ca/1-introduccio' },
+              { text: "2. Declaració d'una funció", link: '/ca/2-declaracio' },
+              { text: '3. Cridar una funció', link: '/ca/3-crida' },
+              { text: "4. Àmbit de les variables", link: '/ca/4-ambit' },
+              { text: "5. Paràmetres: pas per valor i per referència", link: '/ca/5-parametres' },
+              { text: "6. Devolució d'un valor", link: "/ca/6-devolucio" },
+              { text: '7. Recursivitat', link: '/ca/7-recursivitat' },
+              { text: '💡Exemples', link: '/ca/8-exemples' },
+              { text: '✏️Exercicis', link: '/ca/9-exercicis' },
             ]}
           ]
       }
@@ -97,21 +97,21 @@ export default ({
         {
           text: '📚 Continguts',
           items: [
-            { text: '1. Introducció', link: '/1-introduccio' },
-            { text: "2. Declaració d'una funció", link: '/2-declaracio' },
-            { text: '3. Cridar una funció', link: '/3-crida' },
-            { text: "4. Àmbit de les variables", link: '/4-ambit' },
-            { text: "5. Paràmetres: pas per valor i per referència", link: '/5-parametres' },
-            { text: "6. Devolució d'un valor", link: "/6-devolucio" },
-            { text: '7. Recursivitat', link: '/7-recursivitat' },
-            { text: '💡Exemples', link: '/8-exemples' },
-            { text: '✏️Exercicis', link: '/9-exercicis' },
+            { text: '1. Introducció', link: '/ca/1-introduccio' },
+            { text: "2. Declaració d'una funció", link: '/ca/2-declaracio' },
+            { text: '3. Cridar una funció', link: '/ca/3-crida' },
+            { text: "4. Àmbit de les variables", link: '/ca/4-ambit' },
+            { text: "5. Paràmetres: pas per valor i per referència", link: '/ca/5-parametres' },
+            { text: "6. Devolució d'un valor", link: "/ca/6-devolucio" },
+            { text: '7. Recursivitat', link: '/ca/7-recursivitat' },
+            { text: '💡Exemples', link: '/ca/8-exemples' },
+            { text: '✏️Exercicis', link: '/ca/9-exercicis' },
           ]
         },
         { text: '📚 Continguts addicionals', items: [
-          { text: 'Convertir lletra a número', link: '/10-add_lletranumero' },
-          { text: '<img src="img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
-          { text: '<img src="img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
+          { text: 'Convertir lletra a número', link: '/ca/10-add_lletranumero' },
+          { text: '<img src="../img/logo-gva.png" class="logo-anim" style="vertical-align:middle; height:150px; margin-top:100px;">', link: '' },
+          { text: '<img src="../img/logo-centro.png" class="logo-anim" style="vertical-align:middle; height:150px;">', link: '' }
         ]}
       ]
     },
