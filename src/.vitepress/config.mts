@@ -34,6 +34,7 @@ export default ({
               { text: '7. Recursividad', link: '/7-recursivitat' },
               { text: '💡Ejemplos', link: '/8-exemples' },
               { text: '✏️Ejercicios', link: '/9-exercicis' },
+               { text: '✅Solucions', link: '/11-solucions' }
             ]}
           ]
       }
@@ -60,6 +61,7 @@ export default ({
               { text: '7. Recursivitat', link: '/ca/7-recursivitat' },
               { text: '💡Exemples', link: '/ca/8-exemples' },
               { text: '✏️Exercicis', link: '/ca/9-exercicis' },
+               { text: '✅Solucions', link: '/ca/11-solucions' }
             ]}
           ]
       }
@@ -85,6 +87,7 @@ export default ({
             { text: '7. Recursividad', link: '/7-recursivitat' },
             { text: '💡Ejemplos', link: '/8-exemples' },
             { text: '✏️Ejercicios', link: '/9-exercicis' },
+             { text: '✅Solucions', link: '/11-solucions' }
           ]
         },
         { text: '📚 Contenidos adicionales', items: [
@@ -106,6 +109,7 @@ export default ({
             { text: '7. Recursivitat', link: '/ca/7-recursivitat' },
             { text: '💡Exemples', link: '/ca/8-exemples' },
             { text: '✏️Exercicis', link: '/ca/9-exercicis' },
+             { text: '✅Solucions', link: '/ca/11-solucions' }
           ]
         },
         { text: '📚 Continguts addicionals', items: [
