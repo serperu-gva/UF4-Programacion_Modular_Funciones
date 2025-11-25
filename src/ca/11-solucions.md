@@ -673,13 +673,6 @@ public class App {
 
 ### 🧠🧠 Exercici R1
 
-Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s'indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
-
-a) Implementa una funcionalitat que, a partir d'una llista de revisions de l'animal, permeta comptar quantes revisions se li han realitzat en total.  
-b) Implementa una funcionalitat que, a partir d'eixa mateixa llista, retorne un llistat amb totes les edats en què es feren més d'una revisió.  
-c) Determina l'edat en què l'animal va tindre més revisions. En cas d'empat, pots tornar la menor edat.  
-d) Comprova si existeix alguna edat en què no es va fer cap revisió.  
-e) Genera una cadena de text que mostre totes les edats i el nombre de revisions fetes en cadascuna.
 
 ## 🛠️ Solució proposada
 
@@ -694,11 +687,7 @@ e) Genera una cadena de text que mostre totes les edats i el nombre de revisions
 
 ### 🧠🧠 Exercici R2
 
-a) Funció recursiva que torne una cadena sense duplicats mantenint l'ordre.  
-b) Funció que retorne llistat de lletres repetides.  
-c) Funció recursiva que comprove si hi ha dos caràcters consecutius iguals.  
-d) Funció recursiva que compte quants dígits conté una contrasenya.  
-e) Funció recursiva que torne la contrasenya invertida.
+
 
 ## 🛠️ Solució proposada
 
@@ -710,13 +699,7 @@ e) Funció recursiva que torne la contrasenya invertida.
 
 ### 🧠🧠 Exercici R3
 
-Una empresa té una estructura organitzativa on cada empleat pot tindre subordinats, i estos subordinats poden tindre al seu torn més persones al seu càrrec.
 
-Cal crear un sistema que permeta calcular quantes persones estan sota la supervisió directa i indirecta d'un gerent específic. Per exemple, si Joan és gerent de Maria i Pere, i Maria supervisa Anna i Carles, aleshores Joan supervisa indirectament un total de 4 persones.
-
-::: tip NOTA
-L'estructura organitzativa dels empleats s'emmagatzema en una estructura clau-valor, on loa clau és el nom d'un empleat i el valor és el llistat d'empleats al seu càrrec.
-:::
 
 ## 🛠️ Solució proposada
 
@@ -728,9 +711,7 @@ L'estructura organitzativa dels empleats s'emmagatzema en una estructura clau-va
 
 ### 🧠🧠 Exercici R4
 
-Estàs desenvolupant un explorador de fitxers per a una aplicació d'escriptori. Els usuaris poden navegar per carpetes que contenen fitxers i altres carpetes, les quals al seu torn poden contindre més fitxers i carpetes.
 
-Implementa una funcionalitat que permeta buscar un fitxer específic pel nom en tot el sistema de carpetes. El programa ha de revisar la carpeta actual, després entrar en cada subcarpeta i buscar-hi, i així successivament fins a trobar el fitxer o determinar que no existeix.
 
 ## 🛠️ Solució proposada
 

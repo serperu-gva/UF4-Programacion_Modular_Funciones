@@ -66,7 +66,7 @@ g) Escriu un programa que integre totes les funcions anteriors.
 -->
 
 ## Exercicis - Recursivitat
-
+<!--
 ### Exercici R1
 
 Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s'indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
@@ -103,7 +103,7 @@ Estàs desenvolupant un explorador de fitxers per a una aplicació d'escriptori.
 
 Implementa una funcionalitat que permeta buscar un fitxer específic pel nom en tot el sistema de carpetes. El programa ha de revisar la carpeta actual, després entrar en cada subcarpeta i buscar-hi, i així successivament fins a trobar el fitxer o determinar que no existeix.
 
-<!--
+
 ### Exercici 
 
 a) Escriu una funció que genere i retorne un nombre enter aleatori entre 1 i 100.  
