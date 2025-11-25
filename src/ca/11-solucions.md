@@ -668,12 +668,11 @@ public class App {
 }
 
 ```
-
+<!--
 #### Exercicis - Recursivitat
 
 ### 🧠🧠 Exercici R1
-
-
+ 
 ## 🛠️ Solució proposada
 
 
@@ -720,3 +719,4 @@ public class App {
 
 ```java
 ```
+-->

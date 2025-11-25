@@ -66,9 +66,91 @@ g) Escriu un programa que integre totes les funcions anteriors.
 -->
 
 ## Exercicis - Recursivitat
-<!--
+
 ### Exercici R1
 
+Una empresa de análisis de datos quiere saber cuántas veces se repite un código específico dentro de un informe numérico.
+Para ello, desea implementar una función que recorra una lista de códigos y cuente cuántas veces aparece un valor concreto.
+
+Diseña una **función recursiva** llamada `contarCodigo` que reciba:
+
+- un array de enteros,
+
+- un índice inicial,
+
+- y un valor a buscar,
+
+y **devuelva cuántas veces aparece ese valor en el array.**
+
+
+> ejemplo: 
+> contarCodigo([3, 1, 3, 4, 3], 0, 3) → 3
+
+
+### Exercici R2
+
+Una universidad está diseñando un pequeño sistema para detectar si un trabajo fue generado con Inteligencia Artificial.
+
+El sistema funciona así: se introduce el texto del alumno dividido en palabras en un array, y se elige una palabra “trampa” incluida intencionalmente en el enunciado.
+Si el texto contiene más de 5 veces dicha palabra trampa, el trabajo se considera sospechoso de haber sido generado con IA.
+
+Para comenzar, el equipo necesita implementar una función recursiva que cuente cuántas veces aparece esa palabra en el texto.
+
+Diseña una función recursiva llamada `contarPalabra`, que reciba:
+
+- un array de String con todas las palabras del texto,
+
+- un índice inicial,
+
+- y una palabra a buscar,
+
+y **devuelva cuántas veces aparece esa palabra en el array.**
+
+>ejemplo: contarPalabra(["este","es","un","texto","trampa","muy","trampa","porque","trampa","contiene","trampa","varias","trampa","veces"], 0, "trampa")
+→ 6
+>
+>*En este caso, el sistema marcaría el texto como sospechoso.
+
+
+### Exercici R3
+Una empresa de ciberseguridad está desarrollando una herramienta para enmascarar mensajes antes de almacenarlos en una base de datos.
+Como parte del sistema, necesitan invertir el texto original para dificultar su lectura directa.
+
+Implementa una función recursiva que reciba una cadena de texto y devuelva la misma cadena, pero invertida.
+
+>invertir("hola") → "aloh"
+>
+>invertir("seguridad") → "dadiruges"
+>
+>
+
+### Exercici R4
+
+En una empresa de seguretat informàtica s’està estudiant la qualitat de les contrasenyes utilitzades pels treballadors.
+Per a això, es necessita desenvolupar una sèrie de funcions que analitzen diferents aspectes d’una contrasenya.
+
+Un dels primers requisits és crear una funció capaç d’analitzar, mitjançant **recursivitat**, quants caràcters especials conté una contrasenya.
+
+Considerarem **caràcter especial** qualsevol caràcter que NO siga:
+
+- una lletra minúscula,
+
+- una lletra majúscula
+
+- o un dígit numèric.
+
+És a dir, es comptaran com a caràcters especials, per exemple:
+
+>! , . ; : ? + - _ @ # $ % & / ( ) [ ] { } * etc.
+
+La funció haurà de:
+
+- rebre la contrasenya (un String),
+
+- analitzar cada caràcter,
+
+- i retornar el nombre total de caràcters especials que conté.
+<!--
 Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s'indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
 
 a) Implementa una funcionalitat que, a partir d'una llista de revisions de l'animal, permeta comptar quantes revisions se li han realitzat en total. Cal recórrer la llista de forma recursiva i retornar la suma dels valors.  
