@@ -757,7 +757,7 @@ public class App {
         System.out.println("e) Cadena: " + generarCadena(revisions, 0));
     }
 
-    // a) Comptar totes les revisions de forma recursiva
+    // b) Comptar totes les revisions de forma recursiva
     public static int comptarRevisions(ArrayList<int[]> revisions, int index) {
         // Cas base: si hem arribat al final de la llista, tornem 0
         if (index == revisions.size())
@@ -770,23 +770,21 @@ public class App {
         return actual + comptarRevisions(revisions, index + 1);
     }
 
-    // b) Llistar les edats amb més d'una revisió
+    // c) Llistar les edats amb més d'una revisió
     public static String edatsMesDuna(ArrayList<int[]> revisions, int index) {
-        // Cas base: si hem arribat al final, tornem cadena buida
-        if (index == revisions.size())
-            return "";
+        if (index == revisiones.size())
+        return "";
+        
+        int[] elem = revisiones.get(index);
+        
+        if (elem[1] > 1)
+            return elem[0] + edatMasUna(revisiones, index+1);
+        else 
+            return edatMasUna(revisiones, index+1); 
 
-        // Cridem recursivament per a la resta
-        String resta = edatsMesDuna(revisions, index + 1);
-
-        // Si en aquesta edat hi ha més d'una revisió, afegim-la a la cadena
-        if (revisions.get(index)[1] > 1) {
-            return revisions.get(index)[0] + (resta.isEmpty() ? "" : ", " + resta);
-        }
-        return resta; // Si no, només tornem la resta
     }
 
-    // c) Trobar l'edat amb més revisions (menor edat en cas d'empat)
+    // d) Trobar l'edat amb més revisions (menor edat en cas d'empat)
     public static int edatMesRevisions(ArrayList<int[]> revisions, int index) {
         // Cas base: si és l'últim element, tornem la seua edat
         if (index == revisions.size() - 1)
@@ -806,7 +804,7 @@ public class App {
         return millorEdat;
     }
 
-    // d) Comprovar si hi ha alguna edat amb 0 revisions
+    // e) Comprovar si hi ha alguna edat amb 0 revisions
     public static boolean existeixSenseRevisio(ArrayList<int[]> revisions, int index) {
         // Cas base: si hem arribat al final, tornem false
         if (index == revisions.size())
@@ -820,7 +818,7 @@ public class App {
         return existeixSenseRevisio(revisions, index + 1);
     }
 
-    // e) Generar una cadena amb totes les edats i revisions
+    // f) Generar una cadena amb totes les edats i revisions
     public static String generarCadena(ArrayList<int[]> revisions, int index) {
         // Cas base: si hem arribat al final, tornem cadena buida
         if (index == revisions.size())
