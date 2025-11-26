@@ -2,10 +2,10 @@
 
 #### Exercicis - Nivell bàsic
 
-### 🧠 Exercici 1
+## 🧠 Exercici 1
 
 a) Escriu una funció que retorne la suma dels valors d'un vector d'enters.  
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public static int suma(int[] v) {
@@ -18,7 +18,7 @@ public static int suma(int[] v) {
 
 ```
 b) Escriu una funció que retorne la mitjana dels valors d'un vector d'enters.  
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public static double mitjana(int[] v) {
@@ -28,7 +28,7 @@ public static double mitjana(int[] v) {
 ```
 
 c) Escriu una funció que retorne el valor màxim d'un vector d'enters.  
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public static int maxim(int[] v) {
@@ -44,7 +44,7 @@ public static int maxim(int[] v) {
 ```
 d) Escriu un programa que cree un vector amb N valors enters (generats de forma aleatòria) i mostre la suma, la mitjana i el màxim.
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 import java.util.Arrays;
@@ -97,11 +97,11 @@ public class App {
 ```
 
 
-### 🧠 Exercici 2
+## 🧠 Exercici 2
 
 a) Escriu una funció que retorne quantes vocals conté una cadena de text.  
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
     public static int comptaVocals(String s) {
@@ -118,7 +118,7 @@ a) Escriu una funció que retorne quantes vocals conté una cadena de text.
 
 b) Escriu una funció que retorne quants espais conté una cadena de text.  
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
     public static int comptaEspais(String s) {
@@ -134,7 +134,7 @@ b) Escriu una funció que retorne quants espais conté una cadena de text.
 
 c) Escriu una funció que retorne quantes consonants conté una cadena de text.  
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
     public static int comptaConsonants(String s) {
@@ -151,7 +151,7 @@ c) Escriu una funció que retorne quantes consonants conté una cadena de text.
 
 d) Escriu un programa que llig una frase per teclat i mostre el nombre de vocals, el nombre d'espais i el nombre consonants.
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 import java.util.Scanner;
@@ -205,11 +205,11 @@ public class App {
 
 ```
 
-### 🧠 Exercici 3
+## 🧠 Exercici 3
 
 a) Escriu una funció que rebrà una cadena i retornarà la contrària (inversa).  
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
     public static String inversa(String s) {
@@ -222,7 +222,7 @@ a) Escriu una funció que rebrà una cadena i retornarà la contrària (inversa)
 ```
 b) Escriu una funció que rebrà dos cadenes i retornarà true o false en funció de si són iguals o no.  
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 
@@ -232,7 +232,7 @@ b) Escriu una funció que rebrà dos cadenes i retornarà true o false en funci�
 ```
 c) Escriu un programa que demana per teclat una paraula i mostre si és palíndrom usant les funcions anteriors.
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 import java.util.Scanner;
@@ -271,7 +271,7 @@ public class App {
 
 #### Exercicis - Nivell mitjà
 
-### 🧠 Exercici 4
+## 🧠 Exercici 4
 
 a) Escriu una funció que mostre un menú amb les opcions: sumar, restar, multiplicar, dividir i acabar el programa.  
 b) Escriu una funcució que retorne la suma de dos nombres rebuts per paràmetres.  
@@ -281,7 +281,7 @@ e) Escriu una funció que retorne la divisió de dos nombres rebuts per paràmet
 f) Escriu un programa que demane dos nombres, mostre el menú i permeta triar una opció. Ho farà fins que l'usuari seleccione l'opció d'eixir del programa.
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 import java.util.Scanner;
@@ -362,13 +362,13 @@ public class App {
 
 ```
 
-### 🧠 Exercici 5
+## 🧠 Exercici 5
 
 Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència i mostrar l'estat d'assistència de tots els estudiants. Quan l'usuari vulga afegir un estudiant, el programa demanarà el nom i l'incorporarà a la llista de persones matriculades només si no hi és ja, assignant-li automàticament l'estat de no assistit; si el nom ja existeix, no fa cap canvi. Quan l'usuari tria marcar assistència, el sistema demana el nom de l'estudiant i, si el troba a la llista, canvia el seu estat al de assistit, i si no existeix, informa que no es pot marcar l'assistència d'un estudiant desconegut. Quan l'usuari demana veure els assistents, el programa mostrarà tots els noms i si han assistit o no. Finalment, l'usuari podrà finalitzar quan vulga l'execució del programa.
 
-## 🛠️ Solució proposada
+### 🛠️ Solució proposada
 
-### a) Afegir estudiant
+#### a) Afegir estudiant
 - Crear una estructura `HashMap<String, Boolean>` anomenada `estudiants`.
 - Demanar a l’usuari el nom amb `Scanner`.
 - Convertir el nom a minúscules per evitar duplicats.
@@ -378,7 +378,7 @@ Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència
 
 ---
 
-### b) Marcar assistència
+#### b) Marcar assistència
 - Demanar a l’usuari el nom amb `Scanner`.
 - Convertir el nom a minúscules.
 - Comprovar si la clau existeix en `estudiants`:
@@ -387,7 +387,7 @@ Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència
 
 ---
 
-### c) Mostrar estat d’assistència
+#### c) Mostrar estat d’assistència
 - Recorre totes les claus del `HashMap` amb `for(String nom : estudiants.keySet())`
 - Per a cada estudiant:
   - Obtenir el valor amb `estudiants.get(nom)`
@@ -397,7 +397,7 @@ Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència
 
 ---
 
-### d) Menú principal
+#### d) Menú principal
 - Crear un bucle `do … while`
 - Mostrar el menú d’opcions:
   1. Afegir estudiant  
@@ -409,7 +409,7 @@ Dissenya un sistema que permeta afegir un estudiant, marcar la seva assistència
 - Repetir fins que l’usuari trie l’opció **4**
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 import java.util.HashMap;
@@ -500,13 +500,13 @@ public class App {
 
 ```
 
-### 🧠 Exercici 6
+## 🧠 Exercici 6
 
 Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les notes de les cinc assignatures. A partir d'aquest registre, qualsevol vegada que l'usuari ho sol·licite, el programa mostrarà el llistat d'alumnes amb mitjana de notes superior a 9. També ofereix la possibilitat de determinar quin alumne presenta la variabilitat de notes més gran, és a dir, amb major diferència entre la seva nota més alta i la més baixa.
 
-## 🛠️ Solució proposada
+### 🛠️ Solució proposada
 
-### a) Registrar alumnes
+#### a) Registrar alumnes
 - Crear un `HashMap<String, double[]>` per guardar:
   - clau → nom de l’alumne
   - valor → vector amb les cinc notes
@@ -518,7 +518,7 @@ Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les n
 
 ---
 
-### b) Mostrar alumnes amb mitjana superior a 9
+#### b) Mostrar alumnes amb mitjana superior a 9
 - Recorre totes les entrades del mapa amb `for (Entry<String,double[]> ...)`
 - Calcula la suma de les notes i després la mitjana (*suma / 5*)
 - Si la mitjana és > 9, mostrar el nom i la mitjana
@@ -526,7 +526,7 @@ Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les n
 
 ---
 
-### c) Determinar alumne amb major variabilitat
+#### c) Determinar alumne amb major variabilitat
 - Recorre totes les entrades del mapa
 - Per a cada alumne:
   - Busca la seua nota mínima
@@ -537,7 +537,7 @@ Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les n
 
 ---
 
-### d) Menú principal
+#### d) Menú principal
 - Mostrar les opcions:
   1. Registrar alumne  
   2. Mostrar alumnes amb mitjana > 9  
@@ -549,7 +549,7 @@ Un sistema de gestió acadèmica permet registrar alumnes amb el seu nom i les n
 
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 import java.util.HashMap;
@@ -671,7 +671,7 @@ public class App {
 
 #### Exercicis - Recursivitat
 
-### 🧠🧠 Exercici R1
+## 🧠🧠 Exercici R1
  Una empresa d'anàlisi de dades vol saber quàntes vegades es repeteix un codi específic dins d’un informe numèric. Per a això, desitja implementar una funció que recórrega una llista de codis i compte quantes vegades apareix un valor concret.
 
 Dissenya una funció recursiva anomenada contarCodi que reba:
@@ -683,17 +683,17 @@ Dissenya una funció recursiva anomenada contarCodi que reba:
 - i un valor a buscar,
 
 i retorne quantes vegades apareix eixe valor en l’array.
-## 🛠️ Solució proposada
+### 🛠️ Solució proposada
 
 
-### Cas base
+#### Cas base
 - Si `index` arriba al final de l’array (`index == array.length`):
   - S’ha acabat de mirar tots els elements.
   - Retornar **0** perquè no hi ha més coincidències possibles.
 
 ---
 
-### Cas recursiu
+#### Cas recursiu
 Per a cada posició:
 
 - Si `array[index] == objectiu`:
@@ -704,7 +704,7 @@ Per a cada posició:
   - Fa la crida recursiva sense sumar res.
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public class App {
@@ -732,7 +732,7 @@ public class App {
 
 ```
 
-### 🧠🧠 Exercici R2
+## 🧠🧠 Exercici R2
 
 Una universitat està dissenyant un xicotet sistema per a detectar si un treball ha sigut generat amb Intel·ligència Artificial.
 
@@ -751,23 +751,23 @@ Dissenya una funció recursiva anomenada contarParaula, que reba:
 i retorne quantes vegades apareix eixa paraula en l’array.
 
 
-## 🛠️ Solució proposada
+### 🛠️ Solució proposada
 
-### Conversió del text en paraules
+#### Conversió del text en paraules
 - El mètode `contarParaula(String text, String paraula)`:
   - Utilitza `text.split(" ")` per separar el text en un array de paraules.
   - Crida al mètode recursiu passant l’array i començant des de l’índex `0`.
 
 ---
 
-### Cas base
+#### Cas base
 - Si `index == array.length`:
   - S’han analitzat totes les paraules.
   - Retorna **0**, perquè ja no hi ha més coincidències possibles.
 
 ---
 
-### Cas recursiu
+#### Cas recursiu
 Per a cada posició de l’array:
 
 - Si `array[index].equals(paraula)`:
@@ -778,7 +778,7 @@ Per a cada posició de l’array:
   - Simplement continua la recursió sense sumar.
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public class App {
@@ -812,23 +812,23 @@ public class App {
 }
 ```
 
-### 🧠🧠 Exercici R3
+## 🧠🧠 Exercici R3
 
 Una empresa de ciberseguretat està desenvolupant una eina per a emmascarar missatges abans d’emmagatzemar-los en una base de dades. Com a part del sistema, necessiten invertir el text original per a dificultar la seua lectura directa.
 
 Implementa una funció recursiva que reba una cadena de text i retorne la mateixa cadena, però invertida.
 
-## 🛠️ Solució proposada
+### 🛠️ Solució proposada
 
 
-### Cas base
+#### Cas base
 - Si la longitud del text és `<= 1`:
   - No es pot invertir més.
   - Es retorna el mateix text.
 
 ---
 
-### Cas recursiu
+#### Cas recursiu
 Per a invertir la cadena:
 
 1. Obtenir **l’últim caràcter**
@@ -840,7 +840,7 @@ Per a invertir la cadena:
 
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public class App {
@@ -875,7 +875,7 @@ public class App {
 }
 ```
 
-### 🧠🧠 Exercici R4
+## 🧠🧠 Exercici R4
 En una empresa de seguretat informàtica s’està estudiant la qualitat de les contrasenyes utilitzades pels treballadors. Per a això, es necessita desenvolupar una sèrie de funcions que analitzen diferents aspectes d’una contrasenya.
 
 Un dels primers requisits és crear una funció capaç d’analitzar, mitjançant recursivitat, quants caràcters especials conté una contrasenya.
@@ -897,17 +897,17 @@ La funció haurà de:
 
 - i retornar el nombre total de caràcters especials que conté.
 
-## 🛠️ Solució proposada
+### 🛠️ Solució proposada
 
 
-### Cas base
+#### Cas base
 - Si la cadena `s` és buida (`s.equals("")`):
   - No hi ha cap caràcter a analitzar.
   - Retorna **false**.
 
 ---
 
-### Cas recursiu
+#### Cas recursiu
 Per a cada crida:
 
 1. S’agafa el **primer caràcter** de la cadena
@@ -918,7 +918,7 @@ Per a cada crida:
 
 
 
-## 📦 Codi Java
+### 📦 Codi Java
 
 ```java
 public class App {
