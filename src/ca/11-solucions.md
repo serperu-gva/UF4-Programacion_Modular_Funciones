@@ -668,55 +668,281 @@ public class App {
 }
 
 ```
-<!--
+
 #### Exercicis - Recursivitat
 
 ### 🧠🧠 Exercici R1
- 
+ Una empresa d'anàlisi de dades vol saber quàntes vegades es repeteix un codi específic dins d’un informe numèric. Per a això, desitja implementar una funció que recórrega una llista de codis i compte quantes vegades apareix un valor concret.
+
+Dissenya una funció recursiva anomenada contarCodi que reba:
+
+- un array d’enters,
+
+- un índex inicial,
+
+- i un valor a buscar,
+
+i retorne quantes vegades apareix eixe valor en l’array.
 ## 🛠️ Solució proposada
+
+
+### Cas base
+- Si `index` arriba al final de l’array (`index == array.length`):
+  - S’ha acabat de mirar tots els elements.
+  - Retornar **0** perquè no hi ha més coincidències possibles.
+
+---
+
+### Cas recursiu
+Per a cada posició:
+
+- Si `array[index] == objectiu`:
+  - Suma **1** perquè hem trobat una coincidència.
+  - Fa una crida recursiva a `contarCodi(array, index + 1, objectiu)` per continuar buscant.
+
+- Si no coincideix:
+  - Fa la crida recursiva sense sumar res.
 
 
 ## 📦 Codi Java
 
 ```java
+public class App {
+    public static void main(String[] args) {
+        int[] dades = { 3, 1, 3, 4, 3 };
 
+        System.out.println(contarCodi(dades, 0, 3)); // → 3
+    }
 
+    public static int contarCodi(int[] array, int index, int objectiu) {
+        // Cas base: si arribem al final de l'array
+        if (index == array.length) {
+            return 0;
+        }
+
+        // Cas recursiu
+
+        if (array[index] == objectiu)
+            return 1 + contarCodi(array, index + 1, objectiu);
+        else
+            return contarCodi(array, index + 1, objectiu);
+
+    }
+}
 
 ```
 
 ### 🧠🧠 Exercici R2
 
+Una universitat està dissenyant un xicotet sistema per a detectar si un treball ha sigut generat amb Intel·ligència Artificial.
+
+El sistema funciona així: s’introdueix el text de l’alumne dividit en paraules en un array, i s’elegeix una paraula “trampa” inclosa intencionadament en l’enunciat. Si el text conté més de 5 vegades eixa paraula trampa, el treball es considera sospitós d’haver sigut generat amb IA.
+
+Per a començar, l’equip necessita implementar una funció recursiva que compte quantes vegades apareix eixa paraula en el text.
+
+Dissenya una funció recursiva anomenada contarParaula, que reba:
+
+- un array de String amb totes les paraules del text,
+
+- un índex inicial,
+
+- i una paraula a buscar,
+
+i retorne quantes vegades apareix eixa paraula en l’array.
 
 
 ## 🛠️ Solució proposada
+
+### Conversió del text en paraules
+- El mètode `contarParaula(String text, String paraula)`:
+  - Utilitza `text.split(" ")` per separar el text en un array de paraules.
+  - Crida al mètode recursiu passant l’array i començant des de l’índex `0`.
+
+---
+
+### Cas base
+- Si `index == array.length`:
+  - S’han analitzat totes les paraules.
+  - Retorna **0**, perquè ja no hi ha més coincidències possibles.
+
+---
+
+### Cas recursiu
+Per a cada posició de l’array:
+
+- Si `array[index].equals(paraula)`:
+  - Suma **1** perquè s'ha trobat una coincidència.
+  - Continua la recursió amb `index + 1`.
+
+- Si no coincideix:
+  - Simplement continua la recursió sense sumar.
 
 
 ## 📦 Codi Java
 
 ```java
+public class App {
+
+    public static void main(String[] args) {
+        
+        int numRepeticiones = contarParaula(
+                "este es un text trampa molt trampa perque trampa conté trampa varies trampa voltes", "trampa");
+        if (numRepeticiones >= 5)
+            System.out.println("Text generat amb IA");
+        else System.out.println("Text propi");     
+    }
+
+	public static int contarParaula(String text, String paraula){
+		String[] paraules = text.split(" ");
+		return contarParaula(paraules,0,paraula);
+	}
+
+	public static int contarParaula(String[] array, int index, String paraula){
+
+		if (index == array.length)
+			return 0;
+
+		if (array[index].equals(paraula))
+			return 1 + contarParaula(array, index + 1, paraula);
+		else
+			return contarParaula(array, index + 1, paraula);
+
+	}
+
+}
 ```
 
 ### 🧠🧠 Exercici R3
 
+Una empresa de ciberseguretat està desenvolupant una eina per a emmascarar missatges abans d’emmagatzemar-los en una base de dades. Com a part del sistema, necessiten invertir el text original per a dificultar la seua lectura directa.
 
+Implementa una funció recursiva que reba una cadena de text i retorne la mateixa cadena, però invertida.
 
 ## 🛠️ Solució proposada
+
+
+### Cas base
+- Si la longitud del text és `<= 1`:
+  - No es pot invertir més.
+  - Es retorna el mateix text.
+
+---
+
+### Cas recursiu
+Per a invertir la cadena:
+
+1. Obtenir **l’últim caràcter**
+
+2. Obtenir **la resta del text** sense l’últim caràcter
+
+3. Construir el resultat com:
+- L’últim caràcter + el text invertit de la resta.
+
 
 
 ## 📦 Codi Java
 
 ```java
+public class App {
+
+    public static void main(String[] args) {
+
+        String missatge = "codi_confidencial";
+
+        String invertit = invertirMensaje(missatge);
+
+        System.out.println("Entrada:   " + missatge);
+        System.out.println("Eixida:    " + invertit);
+    }
+
+    // Retorna el text invertit per a un emmagatzematge ofuscat
+    public static String invertirMensaje(String text) {
+
+        // Base de la recursió
+        if (text.length() <= 1) {
+            return text;
+        }
+
+        // Últim caràcter
+        char c = text.charAt(text.length() - 1);
+
+        // Resta
+        String resta = text.substring(0, text.length() - 1);
+
+        // Últim + recursió
+        return c + invertirMensaje(resta);
+    }
+}
 ```
 
 ### 🧠🧠 Exercici R4
+En una empresa de seguretat informàtica s’està estudiant la qualitat de les contrasenyes utilitzades pels treballadors. Per a això, es necessita desenvolupar una sèrie de funcions que analitzen diferents aspectes d’una contrasenya.
 
+Un dels primers requisits és crear una funció capaç d’analitzar, mitjançant recursivitat, quants caràcters especials conté una contrasenya.
 
+Considerarem caràcter especial qualsevol caràcter que NO siga:
+
+- una lletra minúscula,
+
+- una lletra majúscula
+
+- o un dígit numèric.
+
+És a dir, es comptaran com a caràcters especials, per exemple: ! , . ; : ? + - _ @ # $ % & / ( ) [ ] { } * etc.
+La funció haurà de:
+
+- rebre la contrasenya (un String),
+
+- analitzar cada caràcter,
+
+- i retornar el nombre total de caràcters especials que conté.
 
 ## 🛠️ Solució proposada
+
+
+### Cas base
+- Si la cadena `s` és buida (`s.equals("")`):
+  - No hi ha cap caràcter a analitzar.
+  - Retorna **false**.
+
+---
+
+### Cas recursiu
+Per a cada crida:
+
+1. S’agafa el **primer caràcter** de la cadena
+2. Si el caràcter **no és lletra** i **no és dígit**:
+   - És un caràcter especial → retorna **true**.
+3. Si és un caràcter normal:
+   - Continua analitzant la resta de la cadena:
+
 
 
 ## 📦 Codi Java
 
 ```java
+public class App {
+    public static void main(String[] args) {
+        System.out.println(
+                conteEspecials("Hola,2024")
+                        ? "Conté caracters especials"
+                        : "No conté caracters especials");
+        System.out.println(
+                conteEspecials("Hola2024")
+                        ? "Conté caracters especials"
+                        : "No conté caracters especials");
+
+    }
+
+    private static boolean conteEspecials(String s) {
+
+        if (s.equals(""))
+            return false;
+        char c = s.charAt(0);
+        if (!Character.isLetter(c) && !Character.isDigit(c))
+            return true;
+
+        return conteEspecials(s.substring(1));
+    }
+}
 ```
--->
