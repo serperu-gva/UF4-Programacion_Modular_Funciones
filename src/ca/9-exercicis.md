@@ -69,60 +69,60 @@ g) Escriu un programa que integre totes les funcions anteriors.
 
 ### Exercici R1
 
-Una empresa de análisis de datos quiere saber cuántas veces se repite un código específico dentro de un informe numérico.
-Para ello, desea implementar una función que recorra una lista de códigos y cuente cuántas veces aparece un valor concreto.
+Una empresa d'anàlisi de dades vol saber quàntes vegades es repeteix un codi específic dins d’un informe numèric.
+Per a això, desitja implementar una funció que recórrega una llista de codis i compte quantes vegades apareix un valor concret.
 
-Diseña una **función recursiva** llamada `contarCodigo` que reciba:
+Dissenya una **funció recursiva** anomenada `contarCodi` que reba:
 
-- un array de enteros,
+- un array d’enters,
 
-- un índice inicial,
+- un índex inicial,
 
-- y un valor a buscar,
+- i un valor a buscar,
 
-y **devuelva cuántas veces aparece ese valor en el array.**
+i **retorne quantes vegades apareix eixe valor en l’array.**
 
 
-> ejemplo: 
-> contarCodigo([3, 1, 3, 4, 3], 0, 3) → 3
+> exemple: 
+> contarCodi([3, 1, 3, 4, 3], 0, 3) → 3
 
 
 ### Exercici R2
 
-Una universidad está diseñando un pequeño sistema para detectar si un trabajo fue generado con Inteligencia Artificial.
+Una universitat està dissenyant un xicotet sistema per a detectar si un treball ha sigut generat amb Intel·ligència Artificial.
 
-El sistema funciona así: se introduce el texto del alumno dividido en palabras en un array, y se elige una palabra “trampa” incluida intencionalmente en el enunciado.
-Si el texto contiene más de 5 veces dicha palabra trampa, el trabajo se considera sospechoso de haber sido generado con IA.
+El sistema funciona així: s’introdueix el text de l’alumne dividit en paraules en un array, i s’elegeix una paraula “trampa” inclosa intencionadament en l’enunciat.
+Si el text conté més de 5 vegades eixa paraula trampa, el treball es considera sospitós d’haver sigut generat amb IA.
 
-Para comenzar, el equipo necesita implementar una función recursiva que cuente cuántas veces aparece esa palabra en el texto.
+Per a començar, l’equip necessita implementar una funció recursiva que compte quantes vegades apareix eixa paraula en el text.
 
-Diseña una función recursiva llamada `contarPalabra`, que reciba:
+Dissenya una funció recursiva anomenada `contarParaula`, que reba:
 
-- un array de String con todas las palabras del texto,
+- un array de String amb totes les paraules del text,
 
-- un índice inicial,
+- un índex inicial,
 
-- y una palabra a buscar,
+- i una paraula a buscar,
 
-y **devuelva cuántas veces aparece esa palabra en el array.**
+i **retorne quantes vegades apareix eixa paraula en l’array.**
 
->ejemplo: contarPalabra(["este","es","un","texto","trampa","muy","trampa","porque","trampa","contiene","trampa","varias","trampa","veces"], 0, "trampa")
+> exemple: contarParaula(["este","és","un","text","trampa","molt","trampa","perquè","trampa","conté","trampa","diverses","trampa","vegades"], 0, "trampa")
 → 6
 >
->*En este caso, el sistema marcaría el texto como sospechoso.
+>*En este cas, el sistema marcaria el text com a sospitós.*
 
 
 ### Exercici R3
-Una empresa de ciberseguridad está desarrollando una herramienta para enmascarar mensajes antes de almacenarlos en una base de datos.
-Como parte del sistema, necesitan invertir el texto original para dificultar su lectura directa.
+Una empresa de ciberseguretat està desenvolupant una eina per a emmascarar missatges abans d’emmagatzemar-los en una base de dades.
+Com a part del sistema, necessiten invertir el text original per a dificultar la seua lectura directa.
 
-Implementa una función recursiva que reciba una cadena de texto y devuelva la misma cadena, pero invertida.
+Implementa una funció recursiva que reba una cadena de text i retorne la mateixa cadena, però invertida.
 
->invertir("hola") → "aloh"
+> invertir("hola") → "aloh"
 >
->invertir("seguridad") → "dadiruges"
+> invertir("seguretat") → "dadiruges"
 >
->
+
 
 ### Exercici R4
 
