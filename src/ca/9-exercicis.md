@@ -129,7 +129,7 @@ Implementa una funció recursiva que reba una cadena de text i retorne la mateix
 En una empresa de seguretat informàtica s’està estudiant la qualitat de les contrasenyes utilitzades pels treballadors.
 Per a això, es necessita desenvolupar una sèrie de funcions que analitzen diferents aspectes d’una contrasenya.
 
-Un dels primers requisits és crear una funció capaç d’analitzar, mitjançant **recursivitat**, quants caràcters especials conté una contrasenya.
+Un dels primers requisits és crear una funció capaç d’analitzar, mitjançant **recursivitat**, si la contrasenya conté caràcters especials.
 
 Considerarem **caràcter especial** qualsevol caràcter que NO siga:
 
@@ -149,7 +149,7 @@ La funció haurà de:
 
 - analitzar cada caràcter,
 
-- i retornar el nombre total de caràcters especials que conté.
+- i retornar si conté caràcters especials.
 <!--
 Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s'indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
 
