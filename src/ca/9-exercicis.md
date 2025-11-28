@@ -91,12 +91,14 @@ i **retorne quantes vegades apareix eixe valor en l’array.**
 
 Una universitat està dissenyant un xicotet sistema per a detectar si un treball ha sigut generat amb Intel·ligència Artificial.
 
-El sistema funciona així: s’introdueix el text de l’alumne dividit en paraules en un array, i s’elegeix una paraula “trampa” inclosa intencionadament en l’enunciat.
+El sistema funciona així: s’introdueix el text de l’alumne en el programa i s’elegeix una paraula “trampa” inclosa intencionadament en l’enunciat.
 Si el text conté més de 5 vegades eixa paraula trampa, el treball es considera sospitós d’haver sigut generat amb IA.
 
 Per a començar, l’equip necessita implementar una funció recursiva que compte quantes vegades apareix eixa paraula en el text.
 
-Dissenya una funció recursiva anomenada `contarParaula`, que reba:
+1) Agafa el text i divideix-lo en un array de paraules.
+
+2) Dissenya una funció recursiva anomenada `contarParaula`, que reba:
 
 - un array de String amb totes les paraules del text,
 
@@ -149,7 +151,7 @@ La funció haurà de:
 
 - analitzar cada caràcter,
 
-- i retornar si conté caràcters especials.
+- i retornar si conté o no caràcters especials.
 <!--
 Estàs desenvolupant un gestor de salut per a mascotes. Cada animal té una fitxa on s'indica, any rere any, les revisions mèdiques anuals. Cada fitxa, per tant, es composa de dos valors: l'edat de l'animal (anirà des de 0 fins a l'actual) i un enter que indica la quantitat de revisions que es va fer amb eixa edat.
 
