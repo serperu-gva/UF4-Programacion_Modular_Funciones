@@ -181,7 +181,7 @@ public class App {
     }
 
     public static int comptaEspais(String s) {
-        int count = 0;
+        int count = 0;Update 9-exercicis.
         for (char c : s.toCharArray()) {
             if (c == ' ') {
                 count++;
@@ -785,9 +785,9 @@ public class App {
 
     public static void main(String[] args) {
         
-        int numRepeticiones = contarParaula(
+        int numRepeticions = contarParaula(
                 "este es un text trampa molt trampa perque trampa conté trampa varies trampa voltes", "trampa");
-        if (numRepeticiones >= 5)
+        if (numRepeticions >= 5)
             System.out.println("Text generat amb IA");
         else System.out.println("Text propi");     
     }
@@ -849,14 +849,14 @@ public class App {
 
         String missatge = "codi_confidencial";
 
-        String invertit = invertirMensaje(missatge);
+        String invertit = invertirMissatge(missatge);
 
         System.out.println("Entrada:   " + missatge);
         System.out.println("Eixida:    " + invertit);
     }
 
     // Retorna el text invertit per a un emmagatzematge ofuscat
-    public static String invertirMensaje(String text) {
+    public static String invertirMissatge(String text) {
 
         // Base de la recursió
         if (text.length() <= 1) {
@@ -870,7 +870,7 @@ public class App {
         String resta = text.substring(0, text.length() - 1);
 
         // Últim + recursió
-        return c + invertirMensaje(resta);
+        return c + invertirMissatge(resta);
     }
 }
 ```
